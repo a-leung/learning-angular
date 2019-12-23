@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'learning-angular-data-binding';
+    today_date = new Date();  // the current date -> page
+    input_value = ''; // set by user input (onKey event); page -> onKey -> page
+    onKey(event: any) {
+	this.input_value = event.target.value; // += event.target.value + '   ' ;
+    };
+
+    two_way_value; // by Angular using: FormsModule
 }
