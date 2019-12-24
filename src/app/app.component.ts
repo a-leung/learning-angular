@@ -13,4 +13,21 @@ export class AppComponent {
     };
 
     two_way_value; // by Angular using: FormsModule
+
+    isDisabled=false;
+
+    submitEnabled = false;
+    setSubmit(event: any) {
+	this.submitEnabled = true;
+    };
+
+    humanValidated=false;
+    humanCheck(event: any) {
+	if (event.target.value == (2+3)) {
+	    this.humanValidated = true;
+	}
+	else {
+	    this.humanValidated = false;
+	}
+    }
 }

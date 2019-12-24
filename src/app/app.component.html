@@ -1,17 +1,15 @@
-
-hello world!
+Enabled submit button:<br>
+<input type="submit" enabled ><br>
 <br>
-Today's date (in your timezone!) is: <br>
-{{ today_date }}
+Disabled submit button:<br>
+<input type="submit" disabled ><br>
+<hr>
 <br>
+Set by AppComponent class:<br>
+<p>isDisabled is {{isDisabled}}</p>
+<input type="submit" [disabled]="isDisabled" >
+<hr>
 <br>
-When you type a character into the box, the value of the form will be displayed below
-<br>
-<input (keyup)="onKey($event)"><br>
-Value entered: <p>{{input_value}}</p>
-<br>
-Two-way data-binding<br>
-<input [(ngModel)]="two_way_value"><br>
-<br>
-<br>
-{{ two_way_value }}
+Human check: in field below, enter 2 plus 3<br>
+<input (keyup)="humanCheck($event)"><br>
+<input type="submit" [disabled]="!humanValidated" >
