@@ -1,15 +1,10 @@
-Enabled submit button:<br>
-<input type="submit" enabled ><br>
-<br>
-Disabled submit button:<br>
-<input type="submit" disabled ><br>
-<hr>
-<br>
-Set by AppComponent class:<br>
-<p>isDisabled is {{isDisabled}}</p>
-<input type="submit" [disabled]="isDisabled" >
-<hr>
-<br>
-Human check: in field below, enter 2 plus 3<br>
-<input (keyup)="humanCheck($event)"><br>
-<input type="submit" [disabled]="!humanValidated" >
+<img style="visibility: {{showDog}}"
+     src="https://www.dropbox.com/s/ugeqlxvawfqwhth/dog_by_roaming_angel.jpeg?raw=1">
+
+<p>
+  Picture of a dog should appear above when "showDog" variable in the
+  component is set to: "visible".<br>
+  <br>
+  Current value of showDog: {{showDog}}<br>
+  <a href="https://unsplash.com/photos/LATYeZyw88c">Photo credits</a>
+</p>
