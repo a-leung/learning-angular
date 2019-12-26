@@ -1,9 +1,14 @@
-<p *ngIf="show_ngIf">
-  Display if ngIf is typed in
-</p>
+Words that are compatible:
+<ul>
+  <li>ngIf</li>
+  <li>dog</li>
+  <li>cat</li>
+</ul>
 
-<img *ngIf="show_dog"
-  src="https://www.dropbox.com/s/ugeqlxvawfqwhth/dog_by_roaming_angel.jpeg?raw=1">
-
-<br>
 <input (keyup)="imageCheck($event)"><br>
+<hr>
+
+<div *ngFor="let word of word_list" >
+  <img *ngIf="words[word].show"
+       [src]="words[word].url">
+</div>
