@@ -1,10 +1,9 @@
-<img style="visibility: {{showDog}}"
-     src="https://www.dropbox.com/s/ugeqlxvawfqwhth/dog_by_roaming_angel.jpeg?raw=1">
-
-<p>
-  Picture of a dog should appear above when "showDog" variable in the
-  component is set to: "visible".<br>
-  <br>
-  Current value of showDog: {{showDog}}<br>
-  <a href="https://unsplash.com/photos/LATYeZyw88c">Photo credits</a>
+<p *ngIf="show_ngIf">
+  Display if ngIf is typed in
 </p>
+
+<img *ngIf="show_dog"
+  src="https://www.dropbox.com/s/ugeqlxvawfqwhth/dog_by_roaming_angel.jpeg?raw=1">
+
+<br>
+<input (keyup)="imageCheck($event)"><br>
