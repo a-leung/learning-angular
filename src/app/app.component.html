@@ -1,12 +1,7 @@
-Words that are compatible:
-<ul *ngFor="let word of word_list">
-  <li>{{ word }}</li>
+<ul *appFor2="words">
+  <li> {{ item }} </li>
 </ul>
 
-<input (keyup)="imageCheck($event)"><br>
-<hr>
-
-<div *ngFor="let word of word_list" >
-  <img *ngIf="words[word].show"
-       [src]="words[word].url">
-</div>
+<p *appFor2="words">
+  <b> {{ item }} </b>
+</p>

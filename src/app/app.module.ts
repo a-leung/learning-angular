@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { For2Directive } from './for2.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+      AppComponent,
+      For2Directive,
   ],
   imports: [
       BrowserModule,
-      FormsModule
+      FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
